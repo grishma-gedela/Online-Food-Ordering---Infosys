@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+
+/* Body */
+body {
+    min-height: 100vh;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+    font-size: 0.24rem;
+    font-family: "Space Grotesk", sans-serif;
+    background-image: radial-gradient(farthest-side, #afc8f9 90%, rgba(255, 254, 254, 0)), radial-gradient(farthest-side, #ddc1fb 90%, #fff0), radial-gradient(circle at 0 0, #d5e0fa, #e5d5f6) !important;
+    background-size: 7rem 7rem, 6rem 6rem, auto;
+    background-position: 30% 10%, 80% 90%, 0;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(50px);
+}
+.contact-map {
+  border: 1px solid #ccc; /* Add border */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Add shadow with increased blur radius */
+
+}
+
+
+.form-control {
+  box-shadow: inset 2px 2px 8px rgba(2, 1, 2, 0.3), inset -2px -2px 8px rgba(255, 255, 255, 0.8);
+  outline: none !important;
+  border: 2px solid #191818;
+  height: 38px;
+  transition: border-color 0.3s;
+}.form-main label {
+    color: #333;
+    font-weight: bold; /* Add this line */
+}
+.contact-detail-box h4 {
+  color: #680505;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+
+ /* Add this line */
+}
+
+/* Add font-weight: bold; to name, email, and message */
+.contact-detail-box p {
+  color: #666;
+   /* Add this line */
+}
+.form-control:hover,
+.form-control:focus {
+  border-color: #04070d;
+}
+
+.contact-detail-box {
+  margin-bottom: 50px; /* Decrease this value to move the boxes up */
+}
+
+/* Wrapper */
+.wrapper {
+    width: 6rem;
+    padding: 0.3rem 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    border-radius: 0.25rem;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+/* Title */
+.wrapper .title {
+    font-weight: bold;
+    font-size: 0.36rem;
+}
+
+/* Content */
+.wrapper .content {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Textarea */
+textarea {
+    border: none;
+    resize: none;
+    width: 100%;
+    padding: 0.2rem;
+    color: inherit;
+    font-family: inherit;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+    box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.3), inset -2px -2px 8px rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Textarea Placeholder */
+textarea::placeholder {
+    color: #aaa;
+}
+
+/* Textarea Focus */
+textarea:focus {
+    outline-color: #ff3352;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #f53030; /* Pink shade */
+    color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Submit Button Hover */
+.submit-btn:hover {
+    background-color: #067404;
+}

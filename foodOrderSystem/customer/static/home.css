@@ -1,0 +1,138 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Vaiables */
+:root{
+    --navbar-height: 60px;
+}
+
+/* Navigation Bar */
+#navbar{
+    position: sticky;
+    display: flex;
+ 
+    align-items: center;
+    top: 0px;
+}
+
+/* Navigation Bar : Logo and Image */
+#logo{
+    margin: 2px 30px;
+}
+
+#logo img{
+    height: 65px;
+    margin: 6px 6px;
+    border-radius: 20px;
+}
+
+/* Navigation Bar : List Styling */
+#navbar ul{
+    display: flex;
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    height: 95%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    margin: 0px 15px;
+    color: floralwhite;
+    border-radius: 10px;
+    position: sticky;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 633px;
+    position: relative;
+}
+
+#home::before{
+    content: "";
+    /* background: url("https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center/cover; */
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/3756498/pexels-photo-3756498.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center/cover;
+    opacity: 0.9;
+    opacity: 0.9;
+    position: absolute;
+    height: 722px;
+    width: 100%;
+    z-index: -1;
+    top: -85px;
+    left: 0px;
+}
+
+#home h1{
+    color: floralwhite;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#home p{
+    color: floralwhite;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 20px 20px;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 4.8rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+.center{
+    text-align: center;
+}

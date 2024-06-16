@@ -1,0 +1,78 @@
+{% include "authentication/mainHeader.html" %}
+{%load static%}
+
+</style>
+<div class="col col-md-8 col-lg-7 col-xl-6 ">
+      <img src={% static "logo.png" %}
+      class="img-fluid" alt="logo" >
+      
+  </div>
+  <div class="col col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+    <div class="text-center py-3">
+    <h1 class="fw-semibold fs-1"> USER REGISTER </h1>
+  </div>
+
+  <form method="POST">
+  {% csrf_token %}
+  <!-- Name input -->
+  <div class="form-outline mb-4">
+    <label class="form-label fw-semibold" for="name">Name</label>
+    <input type="text" id="name" class="form-control form-control" placeholder="Full Name" name="name" required/>
+  </div>
+    <!-- Name input End -->
+    
+   <!-- Email input -->
+  <div class="form-outline mb-3">
+    <label class="form-label fw-semibold" for="email">Email address</label>
+    <input type="email" id="email" class="form-control form-control" placeholder="example@gmail.com" name="email" required/>
+  </div>
+   <!-- Email input End -->
+ 
+
+  <!-- Password input -->
+  <div class="form-outline mb-3">
+    <label class="form-label fw-semibold" for="password">Password</label>
+    <input type="password" id="password" class="form-control form-control" placeholder="Enter your password" name = "password" required/>
+  </div>
+  <div class="form-outline mb-3">
+    <label class="form-label fw-semibold" for="password">Password (Re-Enter)</label>
+    <input type="password" id="password" class="form-control form-control" placeholder="Enter your password again" name = "password" required/>
+  </div>
+
+   <!-- Password input Ended -->
+
+
+  <div class="d-flex justify-content-center my-4">
+    <button type="submit" class="btn btn-outline-danger btn-block">Register</button>
+  </div>
+
+
+  <div class="text-center">
+    {% if showSuccess %}
+    <div class=" container-fluid justify-content-center my-4">
+      <p class="form-control bg-success">Success</p>
+    </div>
+    {% endif %}
+    <p class="fw-bold text-muted"> OR </p>
+    <p>Already a member? <a href="{% url "login" %}">Login</a></p>
+    <p>or continue with:</p>
+    <button type="button" class="btn btn-lg btn-link btn-floating mx-1">
+      <i class="bi bi-google"></i>
+    </button>
+
+    <button type="button" class="btn btn-lg btn-link btn-floating mx-1">
+      <i class="bi bi-facebook"></i>
+    </button>
+
+    <button type="button"  class="btn btn-lg btn-link btn-floating mx-1">
+      <i class="bi bi-twitter-x"></i>
+    </button>
+
+    <button type="button" class="btn btn-lg btn-link btn-floating mx-1">
+      <i class="bi bi-github"></i>
+    </button>
+  </div>
+
+  </form>
+
+  {% include "authentication/mainFooter.html" %}

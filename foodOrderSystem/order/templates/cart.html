@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .table-bordered {
+            border: 1px solid #dee2e6;
+        }
+        .table thead th {
+            background-color: #e9ecef;
+        }
+        .cart-container {
+            max-width: 900px;
+            margin-top: 50px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        img {
+            border-radius: 8px;
+        }
+        .total-cost {
+            font-weight: bold;
+        }
+        .btn-checkout {
+            margin-top: 20px;
+        }
+        .btn-action {
+            margin-right: 5px;
+        }
+        
+      
+        .nav-link.menu-link {
+            
+            color: #dc3545;
+            border-radius: 3px;
+            padding: 5px 5px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .navbar-brand {
+            color: #000000; /* Change this color as needed */
+            font-weight: bold;
+            
+        }
+        
+        .custom-grey {
+            background-color: #e6e9ec; /* Adjust the color code to your desired shade of grey */
+        }
+        
+        
+        
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light custom-grey">
+    <div id="logo">
+        <img src="{% static 'logo-transparent.png' %}" alt="habibifoods.com" style="width: 50px; height: auto;">
+    </div>
+    <div class="container-fluid">
+        <span class="navbar-brand">Habibi-Foods</span>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item active">
+                    <a class="nav-link menu-link" href="/menu">Menu</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container cart-container">
+        
+        <h2 class="text-center">Your Cart</h2>
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>Image</th>
+                    <th>Restaurant Name</th>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item_id, item in cart.items %}
+                <tr>
+                    <td><img width="100px" height="100px" src="/media/{{ item.item.image }}" alt="{{ item.item.name }}"></td>
+                    <td>{{ item.item.restaurantName }}</td>
+                    <td>{{ item.item.name }}</td>
+                    <td>
+                        <form method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="item_id" value="{{ item_id }}">
+                            <button type="submit" name="action" value="decrement" class="btn btn-sm btn-secondary btn-action">-</button>
+                            {{ item.quantity }}
+                            <button type="submit" name="action" value="increment" class="btn btn-sm btn-primary btn-action">+</button>
+                        </form>
+                    </td>
+                    <td>Rs. {{ item.item.price }}</td>
+                    <td>
+                        <form method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="item_id" value="{{ item_id }}">
+                            <button type="submit" name="action" value="remove" class="btn btn-sm btn-danger btn-action">Remove</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <p class="total-cost text-right">Total: Rs. {{ totalCost }}</p>
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+
+        <center>
+            <stripe-buy-button buy-button-id="buy_btn_1PKjk8SCYjqYYpTQ72GpxJyy"
+                publishable-key="pk_test_51NdG18SCYjqYYpTQOf0Hs2EkbpUKTxuM4hZbIzSabLnrFnSJxfIHvpPJmoAzPTL2tNp58kZiRufgOI9YxaaF4MkW00snqohQct">
+            </stripe-buy-button>
+        </center>
+    </div>
+</body>
+
+</html>
