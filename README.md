@@ -1,4 +1,4 @@
-# Habibi Foods - Streamlined Online Food Ordering System
+# Habibi Foods - Online Food Ordering System
 
 ## Overview
 Habibi Foods is a streamlined online food ordering system designed to enable restaurants to manage their menus with ease. The platform includes features such as secure user and restaurant login, menu customization and browsing, feedback, and contact options. Developed using HTML, CSS, Bootstrap, JavaScript for the frontend, and Python (Django) with SQLite for the backend, Habibi Foods ensures efficiency and user satisfaction.
@@ -60,4 +60,12 @@ Habibi Foods is a streamlined online food ordering system designed to enable res
 
 
 ![Food Ordering Feeback](https://github.com/grishma-gedela/Online-Food-Ordering---Infosys/assets/156117966/c3ef9ef8-63fe-4d43-af48-081d2ef3af2f)
+
+## Future Plans
+
+We have exciting plans for Habibi Foods:
+- Implement user reviews and ratings for menu items.
+- Integrate real-time order tracking and notifications.
+- Expand payment options to include digital wallets.
+- Enhance admin dashboard for better analytics and insights.
 
