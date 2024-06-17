@@ -20,5 +20,9 @@ Habibi Foods is a streamlined online food ordering system designed to enable res
 - **Backend:** Python (Django)
 - **Database:** SQLite
 
+## Screenshots of the Project
+![Food Ordering Login Page](https://github.com/grishma-gedela/Online-Food-Ordering---Infosys/assets/156117966/c439309c-fdd9-4631-acbd-828829719618)
+![Food Ordering Menu Page](https://github.com/grishma-gedela/Online-Food-Ordering---Infosys/assets/156117966/70e8413e-e3bb-479a-8ad6-760129f5a56c)
+
 
 
