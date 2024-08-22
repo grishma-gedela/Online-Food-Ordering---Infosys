@@ -5,7 +5,7 @@ Habibi Foods is a streamlined online food ordering system designed to enable res
 
 ## Live Website
 You can view the live demo of the online food ordering system here:
-- **Live Website Link:** [Habibi Foods Live](https://dipeshchadgal10.pythonanywhere.com/)
+- **Live Website Link:** [Habibi Foods Live](https://dipeshchadgal10.pythonanywhere.com/) <br><br>
 
 ![Food Ordering Home Page](https://github.com/grishma-gedela/Online-Food-Ordering---Infosys/assets/156117966/a6782d38-f65e-406d-b18a-b702568442cb)
 
