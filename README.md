@@ -4,6 +4,7 @@
 **Habibi Foods** is a streamlined **online food ordering system** designed to enable restaurants to manage their **menus with ease**. The platform includes features such as **secure user and restaurant login, menu customization, feedback, and contact options**. 
 
 Developed using **HTML, CSS, Bootstrap, JavaScript** for the **frontend**, and **Python (Django) with SQLite** for the **backend**, **Habibi Foods ensures efficiency and user satisfaction**.
+<br>
 
 ---
 ## 🌐 Live Website
@@ -13,6 +14,8 @@ Developed using **HTML, CSS, Bootstrap, JavaScript** for the **frontend**, and *
 ![Home Page](https://github.com/grishma-gedela/Online-Food-Ordering---Infosys/assets/156117966/a6782d38-f65e-406d-b18a-b702568442cb)
 
 ---
+<br>
+
 ## 🎯 Features
 ✅ **User & Restaurant Authentication**
 - **User Login/Register:** Secure customer access.
@@ -29,12 +32,16 @@ Developed using **HTML, CSS, Bootstrap, JavaScript** for the **frontend**, and *
 ✅ **Feedback & Contact Options** – Customers can **provide feedback and contact restaurants**.
 
 ---
+<br>
+
 ## 🔧 Technologies Used
 - **Frontend:** HTML, CSS, Bootstrap, JavaScript  
 - **Backend:** Python (Django)  
 - **Database:** SQLite  
 
 ---
+<br>
+
 ## 🖼️ Screenshots of the Project
 ### 📌 User Login Page
 ![User Login](https://github.com/grishma-gedela/Online-Food-Ordering---Infosys/assets/156117966/3e41ca45-f458-4a32-a044-861fcab6d8ef)
