@@ -86,7 +86,6 @@ Developed using **HTML, CSS, Bootstrap, JavaScript** for the **frontend**, and *
 ![Feedback](https://github.com/grishma-gedela/Online-Food-Ordering---Infosys/assets/156117966/53e7e9a7-872c-46ad-b2f6-1d5154d632e7)
 
 <br>
----
 
 ## 🚀 Future Plans
 🔹 Implement **user reviews and ratings** for menu items.  
