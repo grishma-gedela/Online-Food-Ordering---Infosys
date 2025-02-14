@@ -17,7 +17,6 @@ Developed using **HTML, CSS, Bootstrap, JavaScript** for the **frontend**, and *
 ![Home Page](https://github.com/grishma-gedela/Online-Food-Ordering---Infosys/assets/156117966/a6782d38-f65e-406d-b18a-b702568442cb)
 
 ---
-<br>
 
 ## 🎯 Features
 ✅ **User & Restaurant Authentication**
@@ -35,7 +34,7 @@ Developed using **HTML, CSS, Bootstrap, JavaScript** for the **frontend**, and *
 ✅ **Feedback & Contact Options** – Customers can **provide feedback and contact restaurants**.
 
 ---
-<br>
+
 
 ## 🔧 Technologies Used
 - **Frontend:** HTML, CSS, Bootstrap, JavaScript  
