@@ -46,11 +46,11 @@ Developed using **HTML, CSS, Bootstrap, JavaScript** for the **frontend**, and *
 ## 🖼️ Screenshots of the Project
 ### 📌 User Login Page
 ![User Login](https://github.com/grishma-gedela/Online-Food-Ordering---Infosys/assets/156117966/3e41ca45-f458-4a32-a044-861fcab6d8ef)
-
+<br>
 ### 📌 Menu Page
 ![Menu Page 1](https://github.com/grishma-gedela/Online-Food-Ordering---Infosys/assets/156117966/4f298e8b-e8df-4616-9405-0d7f53647057)  
 ![Menu Page 2](https://github.com/grishma-gedela/Online-Food-Ordering---Infosys/assets/156117966/180ae686-993b-4f0e-9f87-395d33a8c9f5)
-
+<br>
 ### 📌 Add to Cart
 ![Add to Cart](https://github.com/grishma-gedela/Online-Food-Ordering---Infosys/assets/156117966/bab54284-caeb-41c6-a163-4e69cb4734f2)
 
