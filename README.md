@@ -42,7 +42,6 @@ Developed using **HTML, CSS, Bootstrap, JavaScript** for the **frontend**, and *
 - **Database:** SQLite  
 
 ---
-<br>
 
 ## 🖼️ Screenshots of the Project
 ### 📌 User Login Page
